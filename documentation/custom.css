@@ -1,14 +1,16 @@
-/* custom.css */
-html {
-    /* define light-mode variable overrides here */
+.github-corner svg {
+    fill: var(--primary-light-color);
+    color: var(--page-background-color);
+    width: 72px;
+    height: 72px;
 }
- 
-@media (prefers-color-scheme: dark) {
-    html:not(.light-mode) {
-        /* define dark-mode variable overrides here if you DON'T use doxygen-awesome-darkmode-toggle.js */
+
+@media screen and (max-width: 767px) {
+    .github-corner svg {
+        width: 55px;
+        height: 55px;
     }
-}
- 
-html.dark-mode {
-    /* define dark-mode variable overrides here if you DO use doxygen-awesome-darkmode-toggle.js */
+    #projectnumber {
+        margin-right: 22px;
+    }
 }
