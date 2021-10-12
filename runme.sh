@@ -1,10 +1,10 @@
 #!/bin/sh
 
 ## use support libraries
-#source ./scripts/colors.sh
+# source ./scripts/colors.sh
 
 echo "Generate documentation"
-doxygen ./bin/Doxyfile
+doxygen ./documentation/Doxyfile
 
 
 
