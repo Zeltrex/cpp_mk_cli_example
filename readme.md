@@ -1,3 +1,6 @@
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Zeltrex/cpp_mk_cli_example)](https://github.com/Zeltrex/cpp_mk_cli_example)
+[![GitHub](https://img.shields.io/github/license/Zeltrex/cpp_mk_cli_example)](https://github.com/Zeltrex/cpp_mk_cli_example/blob/master/LICENSE)
+
 # Simpleast project example
 
 >> CLEEN UP DOCUMENTATION!!
@@ -10,7 +13,10 @@ Afret successfull script execution you could find project documentation by link 
 
 ## Error List
 
-##
+## History
+
+### Integration of CMake
+
 
 
 
