@@ -31,7 +31,11 @@ namespace MyLibrary {
 
 int main(int argc, char *argv[])
 {
+    std::cout << "Version " << Template_VERSION_MAJOR << "."
+                << Template_VERSION_MINOR << std::endl;
+     return EXIT_SUCCESS;
      const double inputValue = std::stod(argv[1]);
+
     std::cout << "argc == " << argc << '\n';
 
     if (argc < 2) {

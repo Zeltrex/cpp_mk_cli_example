@@ -15,3 +15,18 @@ configure_file(config.h.in main.hpp)
 target_include_directories(Template PUBLIC
                            "${PROJECT_BINARY_DIR}"
                            )
+
+enable_testing()
+
+set(TEMPLATE_TIMEOUT 1)
+add_test(NAME test_1 COMMAND Template 10)
+add_test(NAME test_2 COMMAND Template 10000 )
+
+set_tests_properties(test_1 
+PROPERTIES TIMEOUT ${TEMPLATE_TIMEOUT}
+)
+
+set_tests_properties(test_1 PROPERTIES
+PASS_REGULAR_EXPRESSION "Version*"
+FAIL_REGULAR_EXPRESSION "Error!")
+
