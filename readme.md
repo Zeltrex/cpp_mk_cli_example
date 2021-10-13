@@ -1,11 +1,71 @@
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Zeltrex/cpp_mk_cli_example)](https://github.com/Zeltrex/cpp_mk_cli_example)
-[![GitHub](https://img.shields.io/github/license/Zeltrex/cpp_mk_cli_example)](https://github.com/Zeltrex/cpp_mk_cli_example/blob/master/LICENSE)
+<div style="width: 100%; display: flex; flex-direction: row; justify-content: center;">
+<div style="width:20%; margin: 1% 2% 1% 0%;">
+
+[![zeltrex.com](documentation/zeltrex_logo.png)](https://github/issues/zeltrex/cpp_mk_cli_example)
+</div><div style="width:50%; text-align: center;">
 
 # Simpleast project example
+</div><div style="width:30%;text-align: center;">
 
->> CLEEN UP DOCUMENTATION!!
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/zeltrex/cpp_mk_cli_example)](https://github.com/zeltrex/cpp_mk_cli_example/releases/latest)
+[![GitHub](https://img.shields.io/github/license/zeltrex/cpp_mk_cli_example)](https://github.com/zeltrex/cpp_mk_cli_example/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/github/issues/zeltrex/cpp_mk_cli_example)](https://github.com/zeltrex/cpp_mk_cli_example/issues)
+</div></div>
+
+## Motivation
+
+This project is an attemt to create template for the simple development, with all essentially needed things.
+I will put afforts to add required links to the documentation, ISO, IEC and other basic components to tune this template met high standards even in hobby grade development.
+
+## Features
+
+- **GCC**: C/C++ compiler;
+- **sh/bash**: scripts for integration;
+- **CMake**: as main build system;
+- **CTest**: automation of testing;
+- **Googletests**: expert level unit testing and mockups;
+- **Doxygen**: project documentation generation;
+- **MarkDown**: as main documentation language;
+- **Python**: automation;
+- **Docker**: for testing and validation;
+
+Project itself will be basic:
+- predefined project structure;
+- could be extended wtih libraries;
+- prepeared to be retargeted for other purpuses;
 
 ## Usage
+
+Clone repository and enter to repo directory:
+
+```bash
+git clone --recurse-submodules https://github.com/Zeltrex/cpp_mk_cli_example.git
+cd cpp_mk_cli_example
+```
+
+Simply execute runme.sh
+
+```bash
+./runme.sh
+```
+
+**NOTE:** In some cases you will nee change permissions for that file (once)
+
+```bash
+sudo chmod +x runme.sh
+```
+
+## Preconditions
+
+Those project prepeared for the linux Ubuntu, and does not tested in other environments.
+All necceccery libs will be installed automatically, Single essential requirement: `Ubuntu 20.04` or higher should be used.
+All tests will be done on the latest version of linux with default configurations.
+
+## History
+
+
+### Integration of CMake
+
 
 ### Documentation
 
@@ -13,46 +73,8 @@ Afret successfull script execution you could find project documentation by link 
 
 ## Error List
 
-## History
-
-### Integration of CMake
-
-
-
-
-
-
-
-
-
 ---
-#  Doxygen Awesome
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/jothepro/doxygen-awesome-css)](https://github.com/jothepro/doxygen-awesome-css/releases/latest)
-[![GitHub](https://img.shields.io/github/license/jothepro/doxygen-awesome-css)](https://github.com/jothepro/doxygen-awesome-css/blob/main/LICENSE)
-
-<div style="margin: -1% 35%;">
-
-[![zeltrex.com](documentation/zeltrex_logo.png)](https://jothepro.github.io/doxygen-awesome-css/)
-
-</div>
-
-**Doxygen Awesome** is a custom **CSS theme for doxygen** html-documentation with lots of customization parameters.
-
-## Motivation
-
-I really like how the doxygen html-documentation is structured! But IMHO it looks a bit outdated.
-
-This theme is an attemt to update the visuals of doxygen without changing it's overall layout too much.
-
-## Features
-
-- 🌈 Clean, modern design
-- 🚀 Heavily customizable by adjusting CSS-variables
-- 🧩 No changes to the HTML structure of Doxygen required
-- 📱 Improved mobile usability
-- 🌘 Dark mode support!
-- 🥇 Works best with **doxygen 1.9.1** or **1.9.2**
  
 ## Installation
 
