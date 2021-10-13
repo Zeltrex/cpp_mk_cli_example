@@ -71,135 +71,14 @@ All tests will be done on the latest version of linux with default configuration
 
 Afret successfull script execution you could find project documentation by link [./.output/docs/html/index.html](http://./.output/docs/html/index.html) or ( <a href="./.output/docs/html/index.html" target="_top">./.output/docs/html/index.html</a>)
 
+## Usefull Links
+
+- Cmake documentation: [CMake Reference Documentation](https://cmake.org/cmake/help/latest/index.html)
+
 ## Error List
 
 ---
 
- 
-## Installation
-
-Copy the `css` files from this repository into your project or add this repository as submodule and check out the latest release:
-
-```bash
-git submodule add https://github.com/jothepro/doxygen-awesome-css.git
-cd doxygen-awesome-css
-git checkout v1.5.0
-```
-
-Then make the option `HTML_EXTRA_STYLESHEET` in your Doxyfile point to the `css` files:
-
-```
-# Doxyfile
-# ...
-HTML_EXTRA_STYLESHEET  = doxygen-awesome-css/doxygen-awesome.css
-```
-
-### Variants
-
-There is two variants of the theme.
-
-![theme variations](img/theme-variations.drawio.svg)
-
-1. **Base theme**:
-```
-# Doxyfile
-GENERATE_TREEVIEW      = YES # optional. Also works without treeview
-HTML_EXTRA_STYLESHEET  = doxygen-awesome-css/doxygen-awesome.css
-```
-
-2. **Sidebar-only theme** (experimental):
-```
-# Doxyfile
-GENERATE_TREEVIEW      = YES # required!
-HTML_EXTRA_STYLESHEET  = doxygen-awesome-css/doxygen-awesome.css doxygen-awesome-css/doxygen-awesome-sidebar-only.css
-```
-
-### Dark Mode Toggle (Experimental)
-
-The theme comes with an experimental feature that adds a button to enable and disable the dark theme variant manually.
-
-It requires customizations in both the header & footer html template.
-
-1. Create default header & footer templates:
-   ```bash
-   doxygen -w html header.html footer.html delete_me.css
-   ```
-
-2. Reference the required resources in your `Doxyfile`:
-   ```
-   # Include the required Javascript
-   HTML_EXTRA_FILES       = doxygen-awesome-css/doxygen-awesome-darkmode-toggle.js
-
-   # Add the additional CSS. This is ONLY required for the sidebar-only theme variant!
-   HTML_EXTRA_STYLESHEET  = doxygen-awesome-css/doxygen-awesome.css \ 
-                            doxygen-awesome-css/doxygen-awesome-sidebar-only.css \
-                            doxygen-awesome-css/doxygen-awesome-sidebar-only-darkmode-toggle.css
-
-   # set custom header & footer files generated in previous step
-   HTML_HEADER            = header.html
-   HTML_FOOTER            = footer.html
-   ```
-
-3. In `header.html`, include `doxygen-awesome-darkmode-toggle.js` at the end of the `<head>`:
-   ```html
-   <html> 
-       <head>
-           <!-- ... other metadata & script includes ... -->
-           <script type="text/javascript" src="$relpath^doxygen-awesome-darkmode-toggle.js"></script>
-       </head>
-       <body>
-   ```
-4. In `footer.html`, initialize the `doxygen-awesome-dark-mode-toggle` element at the end of the `<body>`:
-   ```html
-           <!-- ... -->
-           <script type="text/javascript">
-               $(function() {
-                   $(document).ready(function(){
-                      toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
-                      toggleButton.title = "Toggle Light/Dark Mode"
-                      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
-                  })
-               })
-           </script>
-       </body>
-   </html>
-   ```
-
-## Examples
-
-- Sidebar-Only theme: [Documentation of this repository](https://jothepro.github.io/doxygen-awesome-css/)
-- Base theme: [libsl3](https://a4z.github.io/libsl3/)
-
-
-## Configuration
-
-### CSS Variables
-
-This theme is highly customizable because a lot of things are parameterized with CSS variables. The following
-list of parameters is not complete! You can easily modify any variable with the developer tools of your browser to find
-out what it does.
-
-To customize the existing theme, add your own `custom.css` and overwrite the variables there:
-```
-HTML_EXTRA_STYLESHEET  = doxygen-awesome-theme/doxygen-awesome.css custom.css
-```
-
-```css
-/* custom.css */
-html {
-    /* define light-mode variable overrides here */
-}
-
-@media (prefers-color-scheme: dark) {
-    html:not(.light-mode) {
-        /* define dark-mode variable overrides here if you DON'T use doxygen-awesome-darkmode-toggle.js */
-    }
-}
-
-html.dark-mode {
-    /* define dark-mode variable overrides here if you DO use doxygen-awesome-darkmode-toggle.js */
-}
-```
 
 | Parameter                         | Default (Light)                                             | Default (Dark)                                              |
 | :-------------------------------- | :---------------------------------------------------------- | ----------------------------------------------------------- |
