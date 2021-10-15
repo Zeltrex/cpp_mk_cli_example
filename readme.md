@@ -1,7 +1,7 @@
 <div style="width: 100%; display: flex; flex-direction: row; justify-content: center;">
 <div style="width:20%; margin: 1% 2% 1% 0%;">
 
-[![zeltrex.com](documentation/zeltrex_logo.png)](https://github/issues/zeltrex/cpp_mk_cli_example)
+[![zeltrex.com](./documentation/zeltrex_logo.png)](https://github.com/zeltrex/cpp_mk_cli_example)
 </div><div style="width:50%; text-align: center;">
 
 # Simpleast project example
@@ -89,3 +89,19 @@ If you miss a configuration option or find a bug, please consider [opening an is
 | `CLI Project`                   | <span style="background:#1779c4;color:white">v1.0.0</span> | <span style="background:grey;color:white">v0.1.0</span> |
 
 
+ ## Folder structure
+
+ ```css
+└── cpp_mk_cli_example      | project folder
+    ├── .output             | folder for generated files, do not remove, use clean up
+    |   ├── bin             | compiled binaries 
+    |   └── docs            | generated documentation
+    ├── documentation       | templates for the generated documentation
+    ├── scripts             | sh/python scripts used for automation
+    ├── sources             | folder for the projects
+    ├── tests               | folder used by tests
+    ├── deploy              | output folder cleen and prepeared for users
+    ├── readme.md           | initial document
+    ├── runme.sh            | automation script
+    └── LICENS              | MIT license file
+ ```

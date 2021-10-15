@@ -3,10 +3,9 @@
 ## use support libraries
 # source ./scripts/colors.sh
 
-cmake --clean ./.output/bin/
-cmake -S ./sources/template/ -B ./.output/bin/
-cmake --build ./.output/bin/
-cmake --build ./.output/bin/ --target test
+
+cmake -S ./sources/project_cli_cpp/ -B ./.output/bin/project_cli_cpp/
+cmake --build ./.output/bin/project_cli_cpp/
 
 
 echo "Generate documentation"
