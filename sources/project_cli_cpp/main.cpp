@@ -1,17 +1,18 @@
 // Required System Lib:
-#include <string>
 #include <iostream>
-#include <memory>
-#include <iomanip>
 // Project component dependencies:
-
+#include "m_sysinfo.hpp"
 // File dependencies:
-#include "config.h"
 #include "main.hpp"
 
 
 int main(int argc, char *argv[])
 {
-    std::cout << "Version " << Template_VERSION_MAJOR << "." << Template_VERSION_MINOR << std::endl;
+    
+    zeltrex::info::sysinfo c_info;
+
+    std::cout << c_info.getOsName() << std::endl;
+    std::cout << c_info.getAppVersion() << std::endl;
+
     return EXIT_SUCCESS;
 }
